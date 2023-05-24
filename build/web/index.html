@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Demo 2</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            table, th, td {
+                border: 1px solid black;
+                border-collapse: collapse;
+            }
+        </style>
+    </head>
+    <body>
+        <p><a href="Servlet1">manage users</a></p>
+        <p><a href="Servlet4">manage cars</a></p>
+
+        <h1>Fill out the User form</h1>
+        <form action="Servlet3" method="post">
+            <p><input type="text" name="txtuserid" placeholder="enter userid" required="">*</p>
+            <p><input type="text" name="txtfullname" placeholder="enter fullname" required="">*</p>
+            <p><input type="submit" value="create" ></p>
+        </form>
+
+        <h1>Fill out the Car form</h1>
+        <form action="Servlet5" method="post">
+            <p><input type="text" name="txtCarId" placeholder="enter CarID" required="">*</p>
+            <p><input type="text" name="txtCarName" placeholder="enter CarName" required="">*</p>
+            <p><textarea name="txtDescription" cols="30" rows="5"></textarea></p>
+            <p>
+                <input type="number" value="0" min="0" name="txtPrice" />
+            </p>
+            <p>
+                <input type="number" value="0" min="0" name="txtSpeed" />
+            </p>
+            <p>
+                <select name="txtStatus">
+                    <option selected>False</option>
+                    <option>True</option>
+                </select>
+            </p>
+            <p><input type="submit" value="create" ></p>
+        </form>
+    </body>
+</html>
